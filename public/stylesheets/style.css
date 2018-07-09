@@ -32,8 +32,9 @@ a {
   margin: 5px;
   float:right;
   max-width:200px;
-  padding:10px;
+  padding:5px;
   border-radius:25px;
+  text-align:right;
 }
 
 .message-recipient {
@@ -43,16 +44,62 @@ a {
   margin: 5px;
   float:left;
   max-width:200px;
-  padding:10px;
+  padding:5px;
   border-radius:25px;
+  text-align:left;
+}
+
+.system-message {
+  clear:both;
+  display:block;
+  border:1px solid black;
+  background-color:  lightgrey;
+  max-width:290px;
+  margin:auto;
+  height:20px;
+  padding:1px;
+  border-radius:25px;
+  text-align:center;
 }
 
 .chatbox-heading {
   padding: 3px;
 }
 .input-area {
-  height:50px;
+  height:29px;
   background-color:black;
+}
+
+.input-area input {
+  width:255px;
+  height:20px;
+  padding:2px;
+}
+
+.input-area button {
+  border-radius:20px;
+  width:29px;
+}
+
+
+.wallet {
+  float:right;
+  width:100px;
+  border:1px solid black;
+  border-radius:4px;
+  background-color:white;
+}
+
+.wallet h3 {
+  margin: 2px;
+}
+
+.fa-arrow-up {
+  color:green;
+}
+
+.fa-arrow-down {
+  color:red;
 }
 
 #under-the-hood {

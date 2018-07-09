@@ -6,11 +6,24 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <!-- <script src="main.js"></script> -->
 </head>
 <body>
+    <div id="intro">
+        <p>This is a non-functional demo concept of a blockchain messaging service / cryptocurrency wallet for a fake cryptocoin called STARKcoin. Right now, the front end is in an MVP state, but you can see below that there's an "under the hood" section that allows you to see the responses as the blockchain is activated and verified. Both messages and payments are sent through the blockchain, so you can make sure that both your payments and messages arrive safely and securely.</p>
+    </div>
     <div id="chat-panes">
     <div id="chat-area-alpha">
+            <div class="wallet">
+                    <h3>Ayra's Wallet</h3>
+                    <span>Balance: 9 STARKCoin</span>
+                    <div>
+                    <button type="button"><i class="fas fa-arrow-up" title="Send Payment"></i></button>
+                    <button type="button"><i class="fas fa-arrow-down" title="Request Payment"></i></button>
+                    </div>
+        
+                </div>
         <div class="chatbox">
             <div class="chatbox-heading">
                 <span>Ayra Stark</span>
@@ -18,14 +31,36 @@
             <div class="chat-area">
                 <span class="message-sender">
                         Dey gonna cut yo head off 
-                </span>   
+                </span>  
+                <span class="message-recipient">
+                       Nah, it cool, Littlefinger gonna help lol 
+                </span>  
+                <span class="message-recipient">
+                        Wait.  Oh Crap...
+                 </span> 
+                 <span class="message-recipient">
+                        Here take this and gtfo back to Winterfell
+                 </span> 
+                 <span class="system-message">
+                        You received 50 STARKCoin from Ned Stark
+                    </span> 
             </div>
             <div class="input-area">
-                     
+                    <input type="text" placeholder="Write something!"></input>
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
             </div>
         </div>
     </div>
     <div id="chat-area-beta">
+        <div class="wallet">
+            <h3>Ned's Wallet</h3>
+            <span>Balance: 244 STARKCoin</span>
+            <div>
+            <button type="button"><i class="fas fa-arrow-up" title="Send Payment"></i></button>
+            <button type="button"><i class="fas fa-arrow-down" title="Request Payment"></i></button>
+            </div>
+
+        </div>
             <div class="chatbox">
                     <div class="chatbox-heading">
                         <span>Ned Stark</span>
@@ -34,14 +69,28 @@
                     <span class="message-recipient">
                              Dey gonna cut yo head off 
                     </span>  
+                    <span class="message-sender">
+                            Nah, it cool, Littlefinger gonna help lol 
+                     </span> 
+                     <span class="message-sender">
+                            Wait.  Oh Crap...
+                     </span> 
+                     <span class="message-sender">
+                            Here take this and gtfo back to Winterfell
+                     </span> 
+                     <span class="system-message">
+                         You sent 50 STARKCoin to Ayra Stark
+                     </span>
                 </div>
                 <div class="input-area">
-                     
+                     <input type="text" placeholder="Write something!"></input>
+                     <button type="submit"><i class="fas fa-paper-plane"></i></button>
                 </div>
 
             </div>
     </div>
 </div>
+<h2>Under The Hood</h2>
     <div id="under-the-hood">
         <span>{
                 "chain": [
